@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+ <style>
+  #hero {
+  position: relative;
+  overflow: hidden; /* Ensure no overflow from children */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the container */
+  z-index: 0; /* Place the video behind the content */
+}
+
+.container {
+  position: relative; /* Ensure this content is above the video */
+  z-index: 1; /* Place it above the video */
+  /* Add any additional styling needed for text readability */
+}
+
+ </style>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">TechFolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <video class="background-video" src="assets/videos/your-video-file.mp4" autoplay muted loop></video>
+      
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am <br>Mohamed Amine Kerarmi</h2>
+        <p><span class="typed" data-typed-items="Technicien Dossier, Nomenclature"></span></p>
+      </div>
+    </section><!-- /Hero Section -->
+    
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/profile-img.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Nom: </strong> <span>Kerarmi Mohamed Amine</span></p>
+                <p><strong>Profile: </strong> <span>Technicien Dossier - Nomenclature</span></p>
+                <p><strong>Email: </strong> <span>kerarmi.m.amine@gmail.com</span></p>
+                <p><strong>Téléphone: </strong> <span>(+212) 600-280628</span></p>
+
+
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>Catia V5 (CAO – DAO )</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>ARDUINO</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Step 7 Automatisation</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>GMAO</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>ISIS</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Pro concept</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Audros</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                Ingénieur industriel diplômé en Ingénierie et Technologies Industrielles de l'École Nationale des
+                Sciences Appliquées de Tanger, j'occupe actuellement un poste de Technicien en Nomenclature et Méthodes
+                Process.
+              </p>
+              <p>
+                Je possède une expertise confirmée dans la gestion des dossiers techniques, l'optimisation des processus
+                de production, et l'amélioration continue. Maîtrisant des outils tels que Catia V5, GMAO, et ARDUINO,
+                ainsi que des logiciels de CAO/DAO.
+              </p>
+              <p>
+                Je m'engage à contribuer à l'innovation et à l'efficacité opérationnelle au sein d'entreprises axées sur
+                la performance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Objectif</h2>
+        <p>Contribuer au succès de la société
+          évoluée et fait partager mes
+          compétences et mon expérience au
+          sein d’une entreprise dynamique qui
+          donne plus de perspective
+          d’évolution.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Compétences</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Techniques et Technologiques</h4>
+              <p><em>
+                  <ul>
+                    <li> Définir la structure des nomenclatures suivant les modes opératoires en vigueur</li>
+                    <li> Rédiger les gammes de fabrication, Gérer les améliorations proposées par services </li>
+                    <li> Préparer et mettre à disposition les outils nécessaires à la fabrication du produit</li>
+                    <li> Création des fiches d’instruction en utilisant l’logiciel Corel et le logiciel VALOR</li>
+                    <li> Maîtrise les logiciels de Conception et Dessin Assistés par Ordinateur (CAO/DAO)</li>
+                    <li> Connaissances en mécanique </li>
+                    <li> Dessin industriel</li>
+                    <li> Faire évoluer les dossiers de fabrication lors d’une demande client ou d’une demande
+                      interne DTM – DT – DTM1</li>
+                    <li> Lancer la demande de fabrication d’outillages au service process.</li>
+                    <li> Intervenir en support à l’atelier pour les questions liées au dossier de fabrication, en
+                      allant si besoin chercher l’information auprès des autres service (Process, Qualité…). </li>
+                </em></p>
+              <ul>
+
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master DCESS, Ingénierie &amp; Technologies Industriel</h4>
+              <h5>2021 - 2023</h5>
+              <p><em>Ecole National des Sciences Appliquées – TANGER</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Licence professionnelle DCA, Simulation Industriel &amp; technologies</h4>
+              <h5>2020 - 2021</h5>
+              <p><em>Ecole National des Sciences Appliquées – TANGER</em></p>
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>Technicien Spécialisées Electromécaniques des systèmes automatisées</h4>
+              <h5>2016</h5>
+              <p><em>Institut Spécialisé de Technologie Appliquées – BENI MELAL</em></p>
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>Baccalauréat scientifique option Physique Chimie</h4>
+              <h5>2013</h5>
+              <p><em>Lycée Echahid Saleh essarghini – BEN GUERIR</em></p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Expériences Professionnelles</h3>
+            <div class="resume-item">
+              <h4>Technicien Nomenclature et Méthodes Process</h4>
+              <h5>Avril 2022 – En cours</h5>
+              <p><em>Tronico ATLAS – TFZ</em></p>
+              <ul>
+                <li>Gestion des nomenclatures et des dossiers techniques selon les procédures en vigueur.</li>
+                <li>Rédaction des gammes de fabrication et gestion des améliorations proposées par les services.</li>
+                <li>Préparation et mise à disposition des outils nécessaires à la fabrication des produits.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Stagiaire en Méthodes Industrielles</h4>
+              <h5>Juillet 2020 – Décembre 2020</h5>
+              <p><em>SNOP groupe FSD – TFZ</em></p>
+              <ul>
+                <li>Analyse et optimisation des méthodes de production.</li>
+                <li>Collaboration avec les équipes de production pour l’amélioration continue des processus.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>Stagiaire Régleur en Production </h4>
+              <h5>Novembre 2019 – Mars 2020 </h5>
+              <p><em>SNOP groupe FSD – TFZ</em></p>
+              <ul>
+                <li>Réglage et maintenance des équipements de production. </li>
+                <li>Participation à l'amélioration des lignes de production pour optimiser la performance.
+                </li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>Employé Service Personnel</h4>
+              <h5>Mars 2018 – Mai 2019</h5>
+              <p><em>BORAQ Service – BENGUERIR</em></p>
+              <ul>
+                <li>Gestion administrative et support aux ressources humaines.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>Stagiaire Fin d’Études – Département Maintenance</h4>
+              <h5>Avril 2016</h5>
+              <p><em>Groupe OCP – BENGUERIR</em></p>
+              <ul>
+                <li>Maintenance préventive et corrective des équipements industriels.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Je propose une gamme de services spécialisés dans l'ingénierie industrielle, la gestion de processus, et l'optimisation technique</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Gestion Technique et Nomenclature</h3>
+              </a>
+              <p>Définir et gérer les structures des nomenclatures. Préparer et mettre à jour les dossiers de fabrication.
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Méthodes Industrielles et Optimisation des Processus
+                </h3>
+              </a>
+              <p>Rédiger et gérer les processus de fabrication.
+                Répondre aux demandes de mise à jour ou d'amélioration des documents de production. </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Expertise Logicielle CAO/DAO</h3>
+              </a>
+              <p>Maîtrise des outils CAO/DAO tels que Catia V5.
+                Compétences en automatisation industrielle et électromécanique avec des logiciels comme Step 7 Automatisation et ARDUINO.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Support en Ingénierie Mécanique
+                </h3>
+              </a>
+              <p>Connaissances en mécanique et dessin industriel.
+                Capable de fournir un support technique au département de maintenance</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Gestion de Projets & Amélioration Continue
+                </h3>
+              </a>
+              <p>Initiation et gestion des demandes de fabrication d’outillages.
+                Conduite des initiatives d'amélioration continue dans les processus de production.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Création et Gestion des Fiches d'Instruction
+                </h3>
+              </a>
+              <p>Élaboration de fiches d'instruction pour la production.
+                Utilisation des logiciels spécialisés pour créer des documents clairs et efficaces pour les équipes de production.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Je suis à votre disposition pour toute question ou pour discuter de futures collaborations</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Adresse</h3>
+                  <p>AV MLY rachid complexe
+                    AIDA village imm4 N A4
+                    TANGER – 90050
+                    </p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Appelez-moi</h3>
+                  <p>+212 600-280628</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Envoyez-moi un email</h3>
+                  <p>Kerarmi.m.amine@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">TechFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
